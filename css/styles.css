@@ -1,3 +1,4 @@
+/* shared common style */
 * {
     margin: 0;
 }
@@ -14,6 +15,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.text-primary {
+    color: #F00;
+}
+
+.text-secondary {
+    color: #070211;
+}
+
 
 
 /* banner section style */
@@ -51,7 +61,7 @@ body {
     z-index: 3;
 }
 
-.banner-titles h2 {
+.banner-titles h3 {
     font-size: 32px;
     font-weight: 400;
 }
@@ -59,4 +69,82 @@ body {
 .banner-titles h1 {
     font-size: 72px;
     font-weight: 900;
+}
+
+
+/* discount section style */
+.discount {
+    font-family: Inter;
+    text-align: center;
+    margin: 120px 0;
+}
+
+.discount h2 {
+    font-size: 88px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.discount h5 {
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.discount h3 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.discount img {
+    width: 802px;
+    height: auto;
+}
+
+/* midnight-party section */
+.midnight-party {
+    width: 1320px;
+    height: 600px;
+    background-image: url("../images/Vectorrr.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+.midnight-party-overlay {
+    position: absolute;
+    z-index: 2;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+.midnight-sec-text-container {
+    position: relative;
+    z-index: 3;
+    padding-left: 126px;
+}
+
+.midnight-sec-text-container h2 {
+    color: #FFF;
+    font-family: Merriweather;
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.midnight-sec-text-container P {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    width: 50%;
 }
