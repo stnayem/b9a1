@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* banner section style */
+.banner {
+    height: 600px;
+    width: 1320px;
+    background-image: url("../images/Banner-Image.png");
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+.banner-overlay {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: radial-gradient(farthest-side, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    z-index: 2;
+}
+
+.banner-titles {
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+
+    position: relative;
+    z-index: 3;
+}
+
+.banner-titles h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.banner-titles h1 {
+    font-size: 72px;
+    font-weight: 900;
+}
