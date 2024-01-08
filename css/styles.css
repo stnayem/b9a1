@@ -1,4 +1,6 @@
-/* shared common style */
+/* -----------------
+shared common style
+------------------- */
 * {
     margin: 0;
 }
@@ -26,7 +28,9 @@ body {
 
 
 
-/* banner section style */
+/* --------------------
+banner section style
+---------------------- */
 .banner {
     height: 600px;
     width: 1320px;
@@ -72,7 +76,9 @@ body {
 }
 
 
-/* discount section style */
+/* --------------------
+discount section style 
+-----------------------*/
 .discount {
     font-family: Inter;
     text-align: center;
@@ -102,7 +108,9 @@ body {
     height: auto;
 }
 
-/* midnight-party section */
+/*---------------------
+ midnight-party section 
+ -----------------------*/
 .midnight-party {
     width: 1320px;
     height: 600px;
