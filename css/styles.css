@@ -26,7 +26,9 @@ body {
     color: #070211;
 }
 
-
+hr{
+    border: 1px solid gray;
+}
 
 /* --------------------
 banner section style
@@ -121,6 +123,8 @@ discount section style
 
     position: relative;
     z-index: 1;
+
+    margin-bottom:120px;
 }
 
 .midnight-party-overlay {
@@ -156,3 +160,29 @@ discount section style
     margin-bottom: 48px;
     width: 50%;
 }
+
+
+
+/*-----------------------
+ our-portfolio section
+ ----------------------- */
+  .our-portfolio{
+    margin:120px 0;
+  }
+
+  .text-paragraph{
+    color: rgba(100, 100, 100, 0.8);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    width: 50%;
+  }
+
+  .our-portfolio-images{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap:20px;
+  }
+
+
