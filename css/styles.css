@@ -26,9 +26,6 @@ body {
     color: #070211;
 }
 
-hr{
-    border: 1px solid gray;
-}
 
 /* --------------------
 banner section style
@@ -93,7 +90,7 @@ discount section style
     margin-bottom: 48px;
 }
 
-.discount h5 {
+.discount h4 {
     font-size: 24px;
     font-weight: 500;
 
@@ -114,8 +111,15 @@ discount section style
  midnight-party section 
  -----------------------*/
 .midnight-party {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midnight-party-inner {
     width: 1320px;
     height: 600px;
+    margin: 0 0 120px 0;
     background-image: url("../images/Vectorrr.png");
     display: flex;
     flex-direction: column;
@@ -123,8 +127,6 @@ discount section style
 
     position: relative;
     z-index: 1;
-
-    margin-bottom:120px;
 }
 
 .midnight-party-overlay {
@@ -166,23 +168,185 @@ discount section style
 /*-----------------------
  our-portfolio section
  ----------------------- */
-  .our-portfolio{
-    margin:120px 0;
-  }
+.our-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  .text-paragraph{
+.our-portfolio-inner {
+    width: 1320px;
+    margin-bottom: 120px;
+}
+
+.our-portfolio-details h3 {
+    color: #F00;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.our-portfolio-details h2 {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 22px;
+}
+
+.text-paragraph {
     color: rgba(100, 100, 100, 0.8);
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 48px;
-    width: 50%;
-  }
+    width: 66%;
+}
 
-  .our-portfolio-images{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    row-gap:20px;
-  }
+.our-portfolio-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.our-portfolio-images img {
+    width: 424px;
+    height: 450px;
+
+    &:hover {
+        box-shadow: 2px 2px 8px lightgray;
+        transform: scale(1.01);
+        transition: all 0.2s ease-out;
 
 
+    }
+}
+
+/*----------------
+    newsletter
+--------------- */
+
+
+.newsletter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 120px;
+}
+
+.newsletter-section-inner {
+    padding: 80px;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+    width: 1320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.newsletter-section-inner img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;
+}
+
+.newsletter-section-inner h2 {
+    color: #070211;
+    /* text-align: center; */
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+
+    margin-bottom: 22px;
+}
+
+
+.newsletter-section-inner p {
+    width: 896px;
+    line-height: 32px;
+
+    margin-bottom: 48px;
+}
+
+#email-id {
+    width: 438px;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    padding: 25px 0 25px 30px;
+
+    background: #FFF;
+}
+
+#subscribe-id {
+    width: 210px;
+    background-color: #F00;
+    border: none;
+    color: #fff;
+    border-radius: 0 50px 50px 0;
+    padding: 25px 56px;
+    margin-left: -4px;
+}
+
+
+/* ------
+   footer 
+---------*/
+footer {
+    padding: 120px;
+    background: #070211;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer-address-phone-website {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 50px;
+}
+
+.phone-website-sec div {
+    display: flex;
+}
+
+.phone-website-sec img {
+    width: 24px;
+    height: 24px;
+}
+
+.phone-website-sec p {
+    padding-left: 16px;
+}
+
+hr {
+    border: 1px solid #FFFFFF26;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+
+    padding: 48px 0;
+}
+
+.social-icons img {
+    width: 64px;
+    height: 64px;
+    padding-right: 24px;
+}
+
+.footer-all-rights-and-unsubscribe {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 50px;
+}
